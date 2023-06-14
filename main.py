@@ -18,7 +18,7 @@ def clonar(url):
         return f"Error: {str(e)}"
 
 def banner():
-    banner = "IP "
+    banner = "IP-CAPTURE "
     print(banner)
     print("By: FrankoSav By R3D-GHOST")
     os.system("killall php")
